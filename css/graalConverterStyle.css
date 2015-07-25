@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#page-container {
+    border: 5px solid orange;
+    border-radius: 15px;
+    width: 90%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header-container h1 {
+    width: 100%;
+    background: orange;
+    text-align: center;
+}
+
+#input-container {
+    width: 40%;
+}
+
+#canvas-container {
+    padding: 15px;
+}
+#canvas-container canvas {
+    border: 2px solid black;
+    background: beige;
+}
