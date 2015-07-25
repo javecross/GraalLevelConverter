@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+
+    <head>
+        <title>Graal Level Converter</title>
+        <!-- EXTERNAL LIBRARIES -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        
+        <!-- INTERNAL RESOURCES -->
+        <script src="js/graalLevelRender.js"></script>
+        
+    </head>
+    <body>
+        <div id="page-container">
+            <h1>Graal Level Converter</h1>
+            <div id="input-container">
+                <div id="tileset-input-container">
+                    <label for="original-tileset-input">Original Tileset</label>
+                    <input type="file" id="original-tileset-input"/>
+                </div>
+                
+                <input type="button" id="tileset-parser" value="Parse Tileset" />
+            </div>
+            <div id="canvas-container">
+                <canvas id="level-canvas"></canvas>
+            </div>
+        </div>
+        
+    </body>
 </html>
