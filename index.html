@@ -21,15 +21,24 @@
             </div>
             <div id="input-container">
                 <div id="tileset-input-container">
-                    <label for="original-tileset-input">Original Tileset</label>
-                    <input type="file" id="original-tileset-input"/>
+                    <h3>Tilesets</h3>
+                    <!-- 'FROM' tileset -->
+                    <span class='tileset-input-set'>
+                        <label for="original-tileset-input">Original Tileset</label>
+                        <input type="file" id="original-tileset-input"/>
+                    </span>
+                    <!-- 'TO' tileset -->
+                    <span class='tileset-input-set'>
+                        <label for="new-tileset-input">New Tileset</label>
+                        <input type="file" id="new-tileset-input"/>
+                    </span>
                 </div>
-                <input type="button" id="tileset-parser" value="Parse Tileset" />
+                <input type="button" id="tileset-parser" value="Parse Tilesets" />
             </div>
             <div id="canvas-container">
                 <canvas id="level-canvas"></canvas>
             </div>
-            
+
         </div>
     </body>
 </html>

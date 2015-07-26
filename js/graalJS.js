@@ -46,12 +46,12 @@ com.javecross.RootFunctions = function () {
     }
 
     function initializeObjectInputs(objectMap) {
-        tilesetParser.setTilesetInput(objectMap.originalTileset);
+        tilesetParser.setOriginalTilesetInput(objectMap.originalTileset);
         tilesetParser.setPageContainer(objectMap.pageContainer);
     }
 
     function initializeObjectFunctionality(objectMap) {
-        objectMap.parseTilesetButton.on('click', function () {
+        (objectMap.parseTilesetButton).on('click', function () {
             tilesetParser.createTilesetHashMap();
         });
     }
@@ -63,6 +63,7 @@ com.javecross.RootFunctions = function () {
             throw new Error(valid);
         }
         tilesetParser = com.javecross.TilesetParser;
+
         initializeObjectInputs(objectMap);
         initializeObjectFunctionality(objectMap);
 
@@ -80,14 +81,12 @@ $(document).ready(function () {
     var pageObjects = {
         "pageContainer": $("#page-container"),
         "originalTileset": $("#original-tileset-input"),
+        "newTileset": $("#new-tileset-input"),
         "parseTilesetButton": $("#tileset-parser")
     };
 
     try {
         com.javecross.RootFunctions.initialize(pageObjects);
-
-        com.javecross.TileUtils.convertXyToTileId(0, 16);
-        com.javecross.TileUtils.convertXyToTileId(320, 352);
     } catch (error) {
         alert("Unable to initialize graal converter. " + error);
     }

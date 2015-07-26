@@ -59,16 +59,15 @@ com.javecross.TileUtils = function () {
 
         var subIndex = (subTileX) + (subTileY * CHUNK_WIDTH);
         var tileId = PATTERN[chunkIndex] + "" + PATTERN[subIndex];
-
         return tileId;
     }
 
     return {
         convertTileIdToXy: function (tileId) {
-            convertTileIdToXy(tileId);
+            return convertTileIdToXy(tileId);
         },
         convertXyToTileId: function (x, y) {
-            convertXyToTileId(x, y);
+            return convertXyToTileId(x, y);
         },
         getTileSize: function () {
             return TILE_SIZE;
