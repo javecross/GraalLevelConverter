@@ -1,0 +1,7 @@
+div.canvas-container canvas {
+    background: lightgray;
+}
+
+div.canvas-container {
+    overflow-x : scroll;
+}

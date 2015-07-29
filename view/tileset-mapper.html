@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graal Tileset Mapper</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- EXTERNAL LIBRARIES -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <!-- INTERNAL RESOURCES -->
+        <script src="../js/graalTilesetMapper.js"></script>
+        <script src="../js/graalTileUtils.js"></script>
+
+        <link rel='stylesheet' type='text/css' href='../css/tilesetMapperStyle.css'/>
+    </head>
+    <body>
+        <div id="header-container">
+            <h3>Graal tileset mapper</h3>
+        </div>
+        <div id="input-container">
+            <input type="button" value="Confirm Mapping" id="confirm-mapping"/>
+            <input type="button" value="Complete Mapping" id="complete-mapping"/>
+            <input type="file" id="mapping-file"/>
+            <input type="button" value="Save mapping config" id="save-mapping"/>
+        </div>
+        <div>
+            <div id='from-tileset' class='canvas-container'>
+                <canvas width='2048' height='512' id='from-tileset-canvas'></canvas>
+            </div>
+            <div id='to-tileset' class='canvas-container'>
+                <canvas width='2048' height='512' id='to-tileset-canvas'></canvas>
+            </div>
+        </div>
+    </body>
+</html>
